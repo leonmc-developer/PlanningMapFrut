@@ -7,3 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('crud', 'Examples::customers_management');
+$routes->get('terrenos', 'Terrenos::index');
+$routes->get('terrenos/add', 'Terrenos::index');
+

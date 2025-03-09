@@ -17,9 +17,16 @@
       width: 100%;   /* Mapa ocupará todo el ancho de la pantalla */
     }
   </style>
+  <?php 
+  if(isset($css_files))
+foreach($css_files as $file): ?>
+	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; ?>
 </head>
 <body>
-
+<div>
+		<a href='<?php echo site_url('terrenos')?>'>Terreno</a> |
+	</div>
   <h1 style="text-align: center; color: white;">Mapa con Google Maps - Vista Satélite</h1>
   <div id="map"></div>
 
@@ -86,6 +93,17 @@
       });
     }
   </script>
-
+<div style='height:20px;'></div>  
+    <div style="padding: 10px">
+		<?php  
+    if(isset($output))
+    echo $output; 
+   ?>
+    </div>
+    <?php 
+    if(isset($js_files))
+    foreach($js_files as $file): ?>
+        <script src="<?php echo $file; ?>"></script>
+    <?php endforeach; ?>
 </body>
 </html>
