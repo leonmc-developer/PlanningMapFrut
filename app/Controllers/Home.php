@@ -8,6 +8,18 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
+    public function login()
+    {
+        return view('sign-in');
+    }
+    public function maps()
+    {
+        return view('maps');
+    }
     public function terrenos_management()
 	{
 	    $crud = new GroceryCrud();
