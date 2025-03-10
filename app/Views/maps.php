@@ -38,16 +38,11 @@
       });
 
       // Definir las coordenadas del polígono rectangular
-      var rectangleCoords = [
-        { lat: -18.163279331289505, lng: -63.803298868926994 },  // Esquina superior izquierda -18.163279331289505, -63.803298868926994
-        { lat: -18.16377810001784, lng: -63.80311044370675 },  // Esquina superior derecha -18.16358133543084, -63.80311044370675
-        { lat: -18.16369283469969, lng: -63.80344974315759 },  // Esquina inferior derecha  -18.16369283469969, -63.80344974315759
-        { lat: -18.163508064443985, lng: -63.80359793521025 },  // Esquina inferior izquierda  -18.163508064443985, -63.80359793521025
-      ];
+      
 
       // Crear el polígono rectangular
       var rectangle = new google.maps.Polygon({
-        paths: rectangleCoords,  // Coordenadas del polígono
+        paths: <?=$poligonoCoords?>,  // Coordenadas del polígono
         strokeColor: '#FF0000',  // Color del borde del polígono
         strokeOpacity: 0.8,      // Opacidad del borde
         strokeWeight: 2,         // Grosor del borde

@@ -13,6 +13,11 @@ class Home extends BaseController
         $output=array();
         $this->_viewOutput('dashboard', (array)$output);
     }
+    public function informacion()
+    {
+        $output=array();
+        $this->_viewOutput('tables', (array)$output);
+    }
     public function login()
     {
         return view('sign-in');

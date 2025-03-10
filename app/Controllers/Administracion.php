@@ -6,13 +6,14 @@ class Administracion extends BaseController
 {
     public function index()
 	{
-        $output=array();
-        echo "Ingresa";
+        $crud = new GroceryCrud();
+	    $crud->setTable('customers');
+	    $output = $crud->render();
         $this->_viewOutput('administracion', (array)$output);
 	}
     private function _viewOutput($vista=null,$output = null) {
         echo view('template/tp_header',$output);
-        //echo view($vista, $output);
+        echo view($vista, $output);
         echo view('template/tp_footer',$output);
     }
 
