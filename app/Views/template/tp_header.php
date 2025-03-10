@@ -101,9 +101,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/sign-up.html">
-            <i class="material-symbols-rounded opacity-5">nutrition</i>
-            <span class="nav-link-text ms-1">Frutales</span>
+          <a class="nav-link text-dark" href="../administracion/index">
+            <i class="material-symbols-rounded opacity-5">settings</i>
+            <span class="nav-link-text ms-1">Administración</span>
           </a>
         </li>
         <li class="nav-item">
