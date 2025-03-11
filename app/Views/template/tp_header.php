@@ -18,22 +18,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">
   <title>
     PlanningMapFrut-Sistema Agricola Frutales
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
   <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="<?=base_url()?>assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="<?=base_url()?>assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />
+  <link id="pagestyle" href="<?=base_url()?>assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />
 </head>
 
 
@@ -42,7 +42,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-dark opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand px-4 py-3 m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img" width="26" height="26" alt="main_logo">
+        <img src="<?=base_url()?>assets/img/logo-ct-dark.png" class="navbar-brand-img" width="26" height="26" alt="main_logo">
         <span class="ms-1 text-sm text-dark">PlanningMapFrut</span>
       </a>
     </div>
@@ -50,43 +50,43 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active bg-gradient-dark text-white" href="../home/dashboard">
+          <a class="nav-link active bg-gradient-dark text-white" href="<?=base_url()?>home/dashboard">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../maps/index">
+          <a class="nav-link text-dark" href="<?=base_url()?>maps/index">
             <i class="material-symbols-rounded opacity-5">map_search</i>
             <span class="nav-link-text ms-1">Mapa Terreno</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../home/informacion">
+          <a class="nav-link text-dark" href="<?=base_url()?>home/informacion">
             <i class="material-symbols-rounded opacity-5">table_view</i>
             <span class="nav-link-text ms-1">Informacion</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/billing.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/billing.html">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
             <span class="nav-link-text ms-1">Proyectos</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/virtual-reality.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/virtual-reality.html">
             <i class="material-symbols-rounded opacity-5">view_in_ar</i>
             <span class="nav-link-text ms-1">Inventarios</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/rtl.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/rtl.html">
             <i class="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
             <span class="nav-link-text ms-1">Cuentas</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/notifications.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/notifications.html">
             <i class="material-symbols-rounded opacity-5">notifications</i>
             <span class="nav-link-text ms-1">Notifications</span>
           </a>
@@ -95,19 +95,19 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Configuración</h6>
         </li>        
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/sign-in.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/sign-in.html">
             <i class="material-symbols-rounded opacity-5">stacks</i>
             <span class="nav-link-text ms-1">Terrenos</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../administracion/index">
-            <i class="material-symbols-rounded opacity-5">settings</i>
+          <a class="nav-link text-dark" href="<?=base_url()?>administracion/index">
+            <i class="material-symbols-rounded opacity-5">nutrition</i>
             <span class="nav-link-text ms-1">Administración</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/profile.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>pages/profile.html">
             <i class="material-symbols-rounded opacity-5">person</i>
             <span class="nav-link-text ms-1">Usuarios</span>
           </a>
@@ -163,7 +163,7 @@
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
+                        <img src="<?=base_url()?>assets/img/team-2.jpg" class="avatar avatar-sm  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
@@ -181,7 +181,7 @@
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                        <img src="<?=base_url()?>assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
@@ -228,7 +228,7 @@
               </ul>
             </li>
             <li class="nav-item d-flex align-items-center">
-              <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+              <a href="<?=base_url()?>pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
                 <i class="material-symbols-rounded">account_circle</i>
               </a>
             </li>

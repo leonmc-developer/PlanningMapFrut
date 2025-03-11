@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Libraries\GroceryCrud;
+use App\Models\PlantaModel;
 
 class Administracion extends BaseController
 {
