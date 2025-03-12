@@ -7,8 +7,10 @@
                <div class="row">
                     <div class="col-8"><h6 class="text-white text-capitalize ps-3">Plantas Frutales</h6></div> 
                     <div class="col-4" style=" text-align: right;">
-                         <a href="<?=base_url()?>plantas/create" class="btn btn-primary btn-sm mb-0 me-3" style="margin-top: -5px;" >Agregar Planta</a>
-
+                         <!-- <a href="<?=base_url()?>plantas/create" class="btn btn-primary btn-sm mb-0 me-3" style="margin-top: -5px;" >Agregar Planta</a>
+                         -->
+                         <button type="button" class="btn bg-gradient-primary btn-sm mb-0 me-3"  data-bs-toggle="modal" data-bs-target="#createModal"> 
+                         Agregar Planta </button>
                     </div>
               </div>
             </div>
@@ -72,7 +74,75 @@
       </div>
      
 
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
 
 
-    
+
+    <!-- Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-normal" id="exampleModalLabel"> Agregar Nueva Planta </h5>
+        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form  id="formulario_create" action="<?=base_url()?>planta/store_ajax">
+          <div class="input-group input-group-outline my-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="nombre" id="nombre" value="<?= old('nombre') ?>">
+          </div>
+          <div class="input-group input-group-outline my-3">
+              <label class="form-label">Variedad</label>
+              <input type="text" class="form-control" name="variedad" id="variedad"  value="<?= old('variedad') ?>">
+          </div>
+          <div class="input-group input-group-dynamic">
+          <textarea class="multisteps-form__textarea form-control" name="descripcion" id="descripcion"
+          rows="5" placeholder="Descripción" spellcheck="false"></textarea>
+    </div>
+  
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn bg-gradient-primary" id="guardar" onclick="saveData()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function saveData() {
+ 
+ var formData = new FormData(document.getElementById('formulario_create'));
+
+// Usando Fetch API para enviar el formulario por POST
+fetch(document.getElementById('formulario_create').action, {
+  method: 'POST',
+  body: formData
+})
+.then(response => response.json()) // Parsear la respuesta como JSON
+.then(data => {
+  console.log(data);
+  if (data.success) {
+      alert('Formulario enviado con éxito');
+      // Aquí puedes realizar más acciones si la respuesta es exitosa
+    } else {
+      alert('Ocurrió un error: ' + data.message);
+    }
+  // Si necesitas cerrar el modal o limpiar el formulario, puedes hacerlo aquí
+   document.getElementById('formulario_create').reset(); // Para limpiar el formulario
+   document.getElementById('#createModal').modal('hide'); // Si estás usando un modal, de lo contrario puedes usar otro método
+})
+.catch(error => {
+  // Manejar errores
+  console.error('Error:', error);
+  alert('Ocurrió un error. Por favor, intenta nuevamente.');
+});
+  };
+</script>
 
