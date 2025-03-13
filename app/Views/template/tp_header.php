@@ -99,12 +99,28 @@
             <i class="material-symbols-rounded opacity-5">stacks</i>
             <span class="nav-link-text ms-1">Terrenos</span>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>administracion/index">
-            <i class="material-symbols-rounded opacity-5">nutrition</i>
+        </li>       
+        <li class="nav-item  ">
+          <a class="nav-link dropdown-toggle text-dark" role="button"
+           data-bs-toggle="dropdown">
+           <i class="material-symbols-rounded opacity-5">settings</i>
             <span class="nav-link-text ms-1">Administración</span>
           </a>
+          <ul class="dropdown-menu" style="margin-top:0; padding-top:0;">
+            <!-- Submenú de primer nivel -->
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>planta/index">
+                <i class="material-symbols-rounded opacity-5">nutrition</i>
+                <span class="nav-link-text ms-1">Tipo Plantas</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>planta/index">
+                <i class="material-symbols-rounded opacity-5">edit</i>
+                <span class="nav-link-text ms-1">Tipo Plantas</span>
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="<?=base_url()?>pages/profile.html">
