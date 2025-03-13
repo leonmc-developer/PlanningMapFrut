@@ -23,6 +23,8 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nombre</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Variedad</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Descripción</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Color</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Fondo</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Acciones</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
@@ -51,13 +53,12 @@
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Eliminar
-                        </a>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">Sin Relleno</span>
+                      </td>
+                      <td class="align-middle text-center">
+                      <button type="button" class="btn btn-sm bg-gradient-secondary">Editar</button>
+                      <button type="button" class="btn btn-sm bg-gradient-danger">Eliminar</button>
                         <!-- <a href="<?=base_url()?>plantas/edit/<?= $planta['id']; ?>">Editar</a> |
                         <a href="<?=base_url()?>plantas/delete/<?= $planta['id']; ?>" onclick="return confirm('¿Estás seguro de eliminar?')">Eliminar</a>
                      -->
@@ -136,7 +137,10 @@ fetch(document.getElementById('formulario_create').action, {
     }
   // Si necesitas cerrar el modal o limpiar el formulario, puedes hacerlo aquí
    document.getElementById('formulario_create').reset(); // Para limpiar el formulario
-   document.getElementById('#createModal').modal('hide'); // Si estás usando un modal, de lo contrario puedes usar otro método
+   //document.getElementById('#createModal').modal('hide'); // Si estás usando un modal, de lo contrario puedes usar otro método
+   document.getElementById('createModal').classList.remove('show'); document.body.classList.remove('modal-open'); document.querySelector('.modal-backdrop').remove();
+   location.reload();
+
 })
 .catch(error => {
   // Manejar errores
