@@ -128,7 +128,7 @@ fetch(document.getElementById('formulario_create').action, {
 .then(response => response.json()) // Parsear la respuesta como JSON
 .then(data => {
   console.log(data);
-  if (data.success) {
+  if (data["success"]) {
       alert('Formulario enviado con éxito');
       // Aquí puedes realizar más acciones si la respuesta es exitosa
     } else {
