@@ -94,12 +94,12 @@
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Configuración</h6>
         </li>        
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link text-dark" href="<?=base_url()?>pages/sign-in.html">
             <i class="material-symbols-rounded opacity-5">stacks</i>
             <span class="nav-link-text ms-1">Terrenos</span>
           </a>
-        </li>       
+        </li>        -->
         <li class="nav-item  ">
           <a class="nav-link dropdown-toggle text-dark" role="button"
            data-bs-toggle="dropdown">
@@ -109,15 +109,33 @@
           <ul class="dropdown-menu" style="margin-top:0; padding-top:0;">
             <!-- Submenú de primer nivel -->
             <li>
-              <a class="dropdown-item text-dark" href="<?=base_url()?>planta/index">
+              <a class="dropdown-item text-dark" href="<?=base_url()?>terreno/index">
+                <i class="material-symbols-rounded opacity-5">map</i>
+                <span class="nav-link-text ms-1">Terrenos</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>tipo_planta/index">
                 <i class="material-symbols-rounded opacity-5">nutrition</i>
                 <span class="nav-link-text ms-1">Tipo Plantas</span>
               </a>
             </li>
             <li>
               <a class="dropdown-item text-dark" href="<?=base_url()?>planta/index">
-                <i class="material-symbols-rounded opacity-5">edit</i>
-                <span class="nav-link-text ms-1">Tipo Plantas</span>
+                <i class="material-symbols-rounded opacity-5">park</i>
+                <span class="nav-link-text ms-1">Plantas</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>sector/index">
+                <i class="material-symbols-rounded opacity-5">stacks</i>
+                <span class="nav-link-text ms-1">Sectores</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>hilera/index">
+                <i class="material-symbols-rounded opacity-5">timeline</i>
+                <span class="nav-link-text ms-1">Hileras</span>
               </a>
             </li>
           </ul>

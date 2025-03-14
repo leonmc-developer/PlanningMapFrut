@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class PlantaModel extends Model
+class TipoPlantaModel extends Model
 {
-    protected $table      = 'plantas';
+    protected $table      = 'tipo_plantas';
     protected $primaryKey = 'id';
 
-    protected $allowedFields = ['nombre', 'variedad', 'descripcion'];
+    protected $allowedFields = ['nombre', 'variedad', 'descripcion','color','fondo','imagen'];
 
     protected $useTimestamps = true;
  // Nombres de los campos para las fechas
@@ -21,7 +21,10 @@ class PlantaModel extends Model
     protected $validationRules    = [
         'nombre'     => 'required|min_length[3]|max_length[255]',
         'variedad'   => 'required|min_length[3]|max_length[255]',
-        'descripcion' => 'permit_empty'
+        'descripcion' => 'permit_empty',
+        'color' => 'permit_empty',
+        'fondo' => 'permit_empty',
+        'imagen' => 'permit_empty'
     ];
 
     protected $validationMessages = [

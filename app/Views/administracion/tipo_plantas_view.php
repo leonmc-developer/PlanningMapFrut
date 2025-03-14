@@ -93,7 +93,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <form  id="formulario_create" action="<?=base_url()?>planta/store_ajax">
+      <form  id="formulario_create" action="<?=base_url()?>tipo_planta/store_ajax">
           <div class="input-group input-group-outline my-3">
               <label class="form-label">Nombre</label>
               <input type="text" class="form-control" name="nombre" id="nombre" value="<?= old('nombre') ?>">

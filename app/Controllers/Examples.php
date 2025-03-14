@@ -4,16 +4,35 @@ use App\Libraries\GroceryCrud;
 
 class Examples extends BaseController
 {
-	public function customers_management()
+	public function terrenos()
 	{
 	    $crud = new GroceryCrud();
-
-	    $crud->setTable('customers');
-
+	    $crud->setTable('terrenos');
 	    $output = $crud->render();
-
+	    $this->_exampleOutput($output);
+	}
+    public function sectores()
+	{
+	    $crud = new GroceryCrud();
+	    $crud->setTable('sectores');
+	    $output = $crud->render();
 		return $this->_exampleOutput($output);
 	}
+    public function hileras()
+	{
+	    $crud = new GroceryCrud();
+	    $crud->setTable('hileras');
+	    $output = $crud->render();
+		return $this->_exampleOutput($output);
+	}
+    public function plantas()
+	{
+	    $crud = new GroceryCrud();
+	    $crud->setTable('plantas');
+	    $output = $crud->render();
+		return $this->_exampleOutput($output);
+	}
+    
 
 	public function orders_management() {
         $crud = new GroceryCrud();
@@ -95,8 +114,13 @@ class Examples extends BaseController
 
 
     private function _exampleOutput($output = null) {
-        return view('example', (array)$output);
+        echo view('template/tp_header',(array)$output);
+       
+
+         echo view('template/tp_crud', (array)$output);
+        echo view('template/tp_footer',(array)$output);
     }
+    
 
 
 }

@@ -1,15 +1,15 @@
 <?php
 namespace App\Controllers;
-use App\Models\PlantaModel;
+use App\Models\TipoPlantaModel;
 use CodeIgniter\Controller;
 
-class Planta extends Controller
+class TipoPlanta extends Controller
 {
     public function index()
     {
-        $model = new PlantaModel();
-        $data['plantas'] = $model->findAll();  // Obtener todas las plantas
-        $this->_viewOutput('administracion/plantas_view', $data);
+        $model = new TipoPlantaModel();
+        $data['plantas'] = $model->findAll();   
+        $this->_viewOutput('administracion/tipo_plantas_view', $data);
     }
     private function _viewOutput($vista=null,$output = null) {
         echo view('template/tp_header',$output);
@@ -19,12 +19,12 @@ class Planta extends Controller
     public function create()
     {
         $output=array();
-         $this->_viewOutput('administracion/planta_create', $output);
+         $this->_viewOutput('administracion/tipo_planta_create', $output);
     }
 
     public function store()
     {
-        $model = new PlantaModel();
+        $model = new TipoPlantaModel();
 
         $data = [
             'nombre'      => $this->request->getVar('nombre'),
@@ -40,11 +40,14 @@ class Planta extends Controller
     }
     public function store_ajax()
     {
-        $model = new PlantaModel();
+        $model = new TipoPlantaModel();
         $data = [
             'nombre'      => $this->request->getVar('nombre'),
             'variedad'    => $this->request->getVar('variedad'),
-            'descripcion' => $this->request->getVar('descripcion')
+            'descripcion' => $this->request->getVar('descripcion'),
+            'color'       =>'',// $this->request->getVar('color'),
+            'fondo'       =>'',//  $this->request->getVar('fondo'),
+            'imagen'      =>''//  $this->request->getVar('imagen'),
         ];
         if ($model->save($data)) {
             $response = array(
@@ -65,14 +68,14 @@ class Planta extends Controller
 
     public function edit($id)
     {
-        $model = new PlantaModel();
+        $model = new TipoPlantaModel();
         $data['planta'] = $model->find($id);
-         $this->_viewOutput('administracion/planta_edit', $data);
+         $this->_viewOutput('administracion/tipo_planta_edit', $data);
     }
 
     public function update($id)
     {
-        $model = new PlantaModel();
+        $model = new TipoPlantaModel();
 
         $data = [
             'nombre'      => $this->request->getVar('nombre'),
@@ -89,7 +92,7 @@ class Planta extends Controller
 
     public function delete($id)
     {
-        $model = new PlantaModel();
+        $model = new TipoPlantaModel();
         $model->delete($id);
         return redirect()->to('/plantas');
     }
