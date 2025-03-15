@@ -7,17 +7,17 @@
                   document.write(new Date().getFullYear())
                 </script>,
                 <i class="fa fa-heart"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Leonmc</a>
+                <a href="" class="font-weight-bold" target="_blank">Leonmc</a>
                 .
               </div>
             </div>
             <div class="col-lg-6">
               <ul class="nav nav-footer justify-content-center justify-content-lg-end">                
                 <li class="nav-item">
-                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                  <a href="" class="nav-link text-muted" target="_blank">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                  <a href="" class="nav-link text-muted" target="_blank">Blog</a>
                 </li>
               </ul>
             </div>
