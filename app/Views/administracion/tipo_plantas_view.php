@@ -58,7 +58,7 @@
                       </td>
                       <td class="align-middle text-center">
                       <button type="button" class="btn btn-sm bg-gradient-secondary">Editar</button>
-                      <button type="button" class="btn btn-sm bg-gradient-danger">Eliminar</button>
+                      <button type="button" class="btn btn-sm bg-gradient-danger delete-btn" data-id="<?= $planta['id']; ?>">Eliminar</button>
                         <!-- <a href="<?=base_url()?>plantas/edit/<?= $planta['id']; ?>">Editar</a> |
                         <a href="<?=base_url()?>plantas/delete/<?= $planta['id']; ?>" onclick="return confirm('¿Estás seguro de eliminar?')">Eliminar</a>
                      -->
@@ -130,16 +130,16 @@ fetch(document.getElementById('formulario_create').action, {
 .then(data => {
   console.log(data);
   if (data["success"]) {
-      alert('Formulario enviado con éxito');
-      // Aquí puedes realizar más acciones si la respuesta es exitosa
-    } else {
-      alert('Ocurrió un error: ' + data.message);
-    }
-  // Si necesitas cerrar el modal o limpiar el formulario, puedes hacerlo aquí
+      // Si necesitas cerrar el modal o limpiar el formulario, puedes hacerlo aquí
    document.getElementById('formulario_create').reset(); // Para limpiar el formulario
    //document.getElementById('#createModal').modal('hide'); // Si estás usando un modal, de lo contrario puedes usar otro método
    document.getElementById('createModal').classList.remove('show'); document.body.classList.remove('modal-open'); document.querySelector('.modal-backdrop').remove();
    location.reload();
+      // Aquí puedes realizar más acciones si la respuesta es exitosa
+    } else {
+      alert('Ocurrió un error: ' + data.message);
+    }
+ 
 
 })
 .catch(error => {
@@ -149,4 +149,45 @@ fetch(document.getElementById('formulario_create').action, {
 });
   };
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Escuchar el click de los botones de eliminación
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const id = this.getAttribute('data-id'); // Obtiene el ID desde el atributo data-id
+
+            // Confirmar la eliminación
+            if (confirm('¿Estás seguro de que deseas eliminar este registro?')) {
+                // Enviar la solicitud AJAX con fetch
+                fetch('<?=base_url()?>tipo_planta/delete_ajax', {
+                    method: 'POST',  // Usamos POST
+                    headers: {
+                        'Content-Type': 'application/json',  // Indicamos que estamos enviando JSON
+                    },
+                    body: JSON.stringify({ id: id })  // Convertimos el ID a formato JSON
+                })
+                .then(response => response.json()) // Parseamos la respuesta como JSON
+                .then(data => {
+                    // Verificamos la respuesta del servidor
+                    if (data.success) {
+                        alert('Registro eliminado correctamente');
+                        // Aquí puedes eliminar el elemento del DOM si lo deseas
+                       // this.closest('.item').remove(); // Eliminar el contenedor del item
+                       location.reload();
+                    } else {
+                        alert('Hubo un problema al eliminar el registro');
+                    }
+                })
+                .catch(error => {
+                    alert('Error en la solicitud AJAX');
+                    console.error('Error:', error);
+                });
+            }
+        });
+    });
+});
+
+  </script>
 

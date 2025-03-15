@@ -96,4 +96,11 @@ class TipoPlanta extends Controller
         $model->delete($id);
         return redirect()->to('/plantas');
     }
+    public function delete_ajax()
+    {
+        $id=$this->request->getVar('id');
+        $model = new TipoPlantaModel();
+        $model->delete($id);
+        echo json_encode(['success' => true]);
+    }
 }

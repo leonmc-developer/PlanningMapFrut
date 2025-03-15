@@ -13,6 +13,7 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/tipo_planta/create', 'TipoPlanta::create');
  //$routes->post('/tipo_planta/store', 'TipoPlanta::store');
  $routes->post('/tipo_planta/store_ajax', 'TipoPlanta::store_ajax');
+ $routes->post('/tipo_planta/delete_ajax', 'TipoPlanta::delete_ajax');
  $routes->get('/tipo_planta/edit/(:num)', 'TipoPlanta::edit/$1');
  $routes->post('/tipo_planta/update/(:num)', 'TipoPlanta::update/$1');
  $routes->get('/tipo_planta/delete/(:num)', 'TipoPlanta::delete/$1');
