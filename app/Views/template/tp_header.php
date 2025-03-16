@@ -61,14 +61,9 @@
             <span class="nav-link-text ms-1">Mapa Terreno</span>
           </a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>home/informacion">
-            <i class="material-symbols-rounded opacity-5">table_view</i>
-            <span class="nav-link-text ms-1">Informacion</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>pages/billing.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>terreno">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
             <span class="nav-link-text ms-1">Proyectos</span>
           </a>
@@ -80,15 +75,15 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>pages/rtl.html">
-            <i class="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
-            <span class="nav-link-text ms-1">Cuentas</span>
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link text-dark" href="<?=base_url()?>pages/notifications.html">
             <i class="material-symbols-rounded opacity-5">notifications</i>
             <span class="nav-link-text ms-1">Notifications</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="<?=base_url()?>home/informacion">
+            <i class="material-symbols-rounded opacity-5">table_view</i>
+            <span class="nav-link-text ms-1">Reportes</span>
           </a>
         </li>
         <li class="nav-item mt-3">

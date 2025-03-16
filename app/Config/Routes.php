@@ -17,6 +17,7 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/tipo_planta/edit/(:num)', 'TipoPlanta::edit/$1');
  $routes->post('/tipo_planta/update/(:num)', 'TipoPlanta::update/$1');
  $routes->get('/tipo_planta/delete/(:num)', 'TipoPlanta::delete/$1');
+ $routes->get('/terreno', 'Terreno::index');
 
  $routes->get('/terreno/index', 'Examples::terrenos');
  $routes->get('/sector/index', 'Examples::sectores');
