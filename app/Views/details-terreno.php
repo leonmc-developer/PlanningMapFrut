@@ -1,314 +1,361 @@
-
-    <div class="container-fluid py-2">
-      <div class="row">
-        <div class="col-lg-8">
+    <div class="container-fluid px-2 px-md-4">
+      <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+        <span class="mask  bg-gradient-dark  opacity-6"></span>
+      </div>
+      <div class="card card-body mx-2 mx-md-2 mt-n6">
+        <div class="row gx-4 mb-2">
+          <div class="col-auto">
+            <div class="avatar avatar-xl position-relative">
+              <img src="../assets/img/bruce-mars.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm">
+            </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h5 class="mb-1">
+              ACHIRAS-CABAÑITA
+              </h5>
+              <p class="mb-0 font-weight-normal text-sm">
+                Cabaña / Huerta
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+            <div class="nav-wrapper position-relative end-0">
+              <ul class="nav nav-pills nav-fill p-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link mb-0 px-0 py-1 active " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
+                    <i class="material-symbols-rounded text-lg position-relative">home</i>
+                    <span class="ms-1">App</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
+                    <i class="material-symbols-rounded text-lg position-relative">email</i>
+                    <span class="ms-1">Messages</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="false">
+                    <i class="material-symbols-rounded text-lg position-relative">settings</i>
+                    <span class="ms-1">Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="row">
-            <div class="col-xl-6 mb-xl-0 mb-4">
-              <div class="card bg-transparent shadow-xl">
-                <div class="overflow-hidden position-relative border-radius-xl">
-                  <img src="../assets/img/illustrations/pattern-tree.svg" class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100" alt="pattern-tree">
-                  <span class="mask bg-gradient-dark opacity-10"></span>
-                  <div class="card-body position-relative z-index-1 p-3">
-                    <i class="material-symbols-rounded text-white p-2">map</i>
-                    <h5 class="text-white mt-4 mb-5 pb-2">4562&nbsp;&nbsp;&nbsp;1122&nbsp;&nbsp;&nbsp;4594&nbsp;&nbsp;&nbsp;7852</h5>
-                    <div class="d-flex">
-                      <div class="d-flex">
-                        <div class="me-4">
-                          <p class="text-white text-sm opacity-8 mb-0">Achiras</p>
-                          <h6 class="text-white mb-0">Casa-Huerta</h6>
-                        </div>
-                        <div>
-                          <p class="text-white text-sm opacity-8 mb-0">Superfcie</p>
-                          <h6 class="text-white mb-0">1450 m2</h6>
-                        </div>
+            <div class="col-12 col-xl-4">
+              <div class="card card-plain h-100">
+                <div class="card-header pb-0 p-3">
+                  <h6 class="mb-0">Platform Settings</h6>
+                </div>
+                <div class="card-body p-3">
+                  <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item border-0 px-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault" checked>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault">Email me when someone follows me</label>
                       </div>
-                      <div class="ms-auto w-20 d-flex align-items-end justify-content-end">
-                        <img class="w-60 mt-2" src="../assets/img/logos/mastercard.png" alt="logo">
+                    </li>
+                    <li class="list-group-item border-0 px-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault1">
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault1">Email me when someone answers on my post</label>
                       </div>
-                    </div>
-                  </div>
+                    </li>
+                    <li class="list-group-item border-0 px-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault2" checked>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault2">Email me when someone mentions me</label>
+                      </div>
+                    </li>
+                  </ul>
+                  <h6 class="text-uppercase text-body text-xs font-weight-bolder mt-4">Application</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item border-0 px-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault3">
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault3">New launches and projects</label>
+                      </div>
+                    </li>
+                    <li class="list-group-item border-0 px-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault4" checked>
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault4">Monthly product updates</label>
+                      </div>
+                    </li>
+                    <li class="list-group-item border-0 px-0 pb-0">
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-auto" type="checkbox" id="flexSwitchCheckDefault5">
+                        <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="flexSwitchCheckDefault5">Subscribe to newsletter</label>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <div class="row">
-                <div class="col-md-6 col-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-dark shadow text-center border-radius-lg">
-                        <i class="material-symbols-rounded opacity-10">account_balance</i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Salary</h6>
-                      <span class="text-xs">Belong Interactive</span>
-                      <hr class="horizontal dark my-3">
-                      <h5 class="mb-0">+$2000</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-dark shadow text-center border-radius-lg">
-                        <i class="material-symbols-rounded opacity-10">account_balance_wallet</i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Paypal</h6>
-                      <span class="text-xs">Freelance Payment</span>
-                      <hr class="horizontal dark my-3">
-                      <h5 class="mb-0">$455.00</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 mb-lg-0 mb-4">
-              <div class="card mt-4">
+            <div class="col-12 col-xl-4">
+              <div class="card card-plain h-100">
                 <div class="card-header pb-0 p-3">
                   <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                      <h6 class="mb-0">Metodo Pago</h6>
+                    <div class="col-md-8 d-flex align-items-center">
+                      <h6 class="mb-0">Información</h6>
                     </div>
-                    <div class="col-6 text-end">
-                      <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm">add</i>&nbsp;&nbsp;Agregar Cuenta</a>
+                    <div class="col-md-4 text-end">
+                      <a href="javascript:;">
+                        <i class="fas fa-user-edit text-secondary text-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Profile"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-md-6 mb-md-0 mb-4">
-                      <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
-                        <img class="w-10 me-3 mb-0" src="../assets/img/logos/mastercard.png" alt="logo">
-                        <h6 class="mb-0">****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;7852</h6>
-                        <i class="material-symbols-rounded ms-auto text-dark cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card">edit</i>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
-                        <img class="w-10 me-3 mb-0" src="../assets/img/logos/visa.png" alt="logo">
-                        <h6 class="mb-0">****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;5248</h6>
-                        <i class="material-symbols-rounded ms-auto text-dark cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card">edit</i>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="text-sm">
+                  Somos una familia dedicada a cultivar frutas frescas , ubicada en la localiad de Achiras, Santa Cruz - Bolivia sino también la de nuestra comunidad. Nos apasiona compartir lo que producimos con nuestros amigos y vecinos, y creemos en el valor de la agricultura sustentable para cuidar el medio ambiente y promover una alimentación sana..
+                  </p>
+                  <hr class="horizontal gray-light my-4">
+                  <ul class="list-group">
+                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong> &nbsp; Alec M. Thompson</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong> &nbsp; (44) 123 1234 123</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> &nbsp; alecthompson@mail.com</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> &nbsp; USA</li>
+                    <li class="list-group-item border-0 ps-0 pb-0">
+                      <strong class="text-dark text-sm">Social:</strong> &nbsp;
+                      <a class="btn btn-facebook btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                        <i class="fab fa-facebook fa-lg"></i>
+                      </a>
+                      <a class="btn btn-twitter btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                        <i class="fab fa-twitter fa-lg"></i>
+                      </a>
+                      <a class="btn btn-instagram btn-simple mb-0 ps-1 pe-2 py-0" href="javascript:;">
+                        <i class="fab fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card h-100">
-            <div class="card-header pb-0 p-3">
+            <div class="col-12 col-xl-4">
+              <div class="card card-plain h-100">
+                <div class="card-header pb-0 p-3">
+                  <h6 class="mb-0">Conversations</h6>
+                </div>
+                <div class="card-body p-3">
+                  <ul class="list-group">
+                    <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2 pt-0">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/kal-visuals-square.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">Sophie B.</h6>
+                        <p class="mb-0 text-xs">Hi! I need more information..</p>
+                      </div>
+                      <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/marie.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">Anne Marie</h6>
+                        <p class="mb-0 text-xs">Awesome work, can you..</p>
+                      </div>
+                      <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/ivana-square.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">Ivanna</h6>
+                        <p class="mb-0 text-xs">About files I can..</p>
+                      </div>
+                      <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center px-0 mb-2">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/team-4.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">Peterson</h6>
+                        <p class="mb-0 text-xs">Have a great afternoon..</p>
+                      </div>
+                      <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center px-0">
+                      <div class="avatar me-3">
+                        <img src="../assets/img/team-3.jpg" alt="kal" class="border-radius-lg shadow">
+                      </div>
+                      <div class="d-flex align-items-start flex-column justify-content-center">
+                        <h6 class="mb-0 text-sm">Nick Daniel</h6>
+                        <p class="mb-0 text-xs">Hi! I need more information..</p>
+                      </div>
+                      <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto w-25 w-md-auto" href="javascript:;">Reply</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <div class="mb-5 ps-3">
+                <h6 class="mb-1">Projects</h6>
+                <p class="text-sm">Architects design houses</p>
+              </div>
               <div class="row">
-                <div class="col-6 d-flex align-items-center">
-                  <h6 class="mb-0">Proyectos</h6>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 m-2">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">Project #2</p>
+                      <a href="javascript:;">
+                        <h5>
+                          Modern
+                        </h5>
+                      </a>
+                      <p class="mb-4 text-sm">
+                        As Uber works through a huge amount of internal management turmoil.
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
+                            <img alt="Image placeholder" src="../assets/img/team-1.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
+                            <img alt="Image placeholder" src="../assets/img/team-2.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
+                            <img alt="Image placeholder" src="../assets/img/team-3.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
+                            <img alt="Image placeholder" src="../assets/img/team-4.jpg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 text-end">
-                  <button class="btn btn-outline-primary btn-sm mb-0">Ver Todos</button>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 m-2">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="../assets/img/home-decor-2.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">Project #1</p>
+                      <a href="javascript:;">
+                        <h5>
+                          Scandinavian
+                        </h5>
+                      </a>
+                      <p class="mb-4 text-sm">
+                        Music is something that every person has his or her own specific opinion about.
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
+                            <img alt="Image placeholder" src="../assets/img/team-3.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
+                            <img alt="Image placeholder" src="../assets/img/team-4.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
+                            <img alt="Image placeholder" src="../assets/img/team-1.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
+                            <img alt="Image placeholder" src="../assets/img/team-2.jpg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 m-2">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="../assets/img/home-decor-3.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">Project #3</p>
+                      <a href="javascript:;">
+                        <h5>
+                          Minimalist
+                        </h5>
+                      </a>
+                      <p class="mb-4 text-sm">
+                        Different people have different taste, and various types of music. Music is life.
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
+                            <img alt="Image placeholder" src="../assets/img/team-4.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
+                            <img alt="Image placeholder" src="../assets/img/team-3.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
+                            <img alt="Image placeholder" src="../assets/img/team-2.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
+                            <img alt="Image placeholder" src="../assets/img/team-1.jpg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-xl-0 mb-4">
+                  <div class="card card-blog card-plain">
+                    <div class="card-header p-0 m-2">
+                      <a class="d-block shadow-xl border-radius-xl">
+                        <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+                      </a>
+                    </div>
+                    <div class="card-body p-3">
+                      <p class="mb-0 text-sm">Project #4</p>
+                      <a href="javascript:;">
+                        <h5>
+                          Gothic
+                        </h5>
+                      </a>
+                      <p class="mb-4 text-sm">
+                        Why would anyone pick blue over pink? Pink is obviously a better color.
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">View Project</button>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
+                            <img alt="Image placeholder" src="../assets/img/team-4.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
+                            <img alt="Image placeholder" src="../assets/img/team-3.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Milly">
+                            <img alt="Image placeholder" src="../assets/img/team-2.jpg">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
+                            <img alt="Image placeholder" src="../assets/img/team-1.jpg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body p-3 pb-0">
-              <ul class="list-group">
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="mb-1 text-dark font-weight-bold text-sm">Huerta Manzanal</h6>
-                    <span class="text-xs">#MS-415646</span>
-                  </div>
-                  <div class="d-flex align-items-center text-sm">
-                    $180
-                    <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-symbols-rounded text-lg position-relative me-1">picture_as_pdf</i> PDF</button>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="text-dark mb-1 font-weight-bold text-sm">Mandarina Incor</h6>
-                    <span class="text-xs">#RV-126749</span>
-                  </div>
-                  <div class="d-flex align-items-center text-sm">
-                    $250
-                    <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-symbols-rounded text-lg position-relative me-1">picture_as_pdf</i> PDF</button>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="text-dark mb-1 font-weight-bold text-sm">Coffee</h6>
-                    <span class="text-xs">#FB-212562</span>
-                  </div>
-                  <div class="d-flex align-items-center text-sm">
-                    $560
-                    <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-symbols-rounded text-lg position-relative me-1">picture_as_pdf</i> PDF</button>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="text-dark mb-1 font-weight-bold text-sm">Turbalina</h6>
-                    <span class="text-xs">#QW-103578</span>
-                  </div>
-                  <div class="d-flex align-items-center text-sm">
-                    $120
-                    <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-symbols-rounded text-lg position-relative me-1">picture_as_pdf</i> PDF</button>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="text-dark mb-1 font-weight-bold text-sm">Poza</h6>
-                    <span class="text-xs">#AR-803481</span>
-                  </div>
-                  <div class="d-flex align-items-center text-sm">
-                    $300
-                    <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4"><i class="material-symbols-rounded text-lg position-relative me-1">picture_as_pdf</i> PDF</button>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-7 mt-4">
-          <div class="card">
-            <div class="card-header pb-0 px-3">
-              <h6 class="mb-0">Información Facturación</h6>
-            </div>
-            <div class="card-body pt-4 p-3">
-              <ul class="list-group">
-                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="mb-3 text-sm">Oliver Liam</h6>
-                    <span class="mb-2 text-xs">Company Name: <span class="text-dark font-weight-bold ms-sm-2">Viking Burrito</span></span>
-                    <span class="mb-2 text-xs">Email Address: <span class="text-dark ms-sm-2 font-weight-bold">oliver@burrito.com</span></span>
-                    <span class="text-xs">VAT Number: <span class="text-dark ms-sm-2 font-weight-bold">FRB1235476</span></span>
-                  </div>
-                  <div class="ms-auto text-end">
-                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">delete</i>Delete</a>
-                    <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">edit</i>Edit</a>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="mb-3 text-sm">Lucas Harper</h6>
-                    <span class="mb-2 text-xs">Company Name: <span class="text-dark font-weight-bold ms-sm-2">Stone Tech Zone</span></span>
-                    <span class="mb-2 text-xs">Email Address: <span class="text-dark ms-sm-2 font-weight-bold">lucas@stone-tech.com</span></span>
-                    <span class="text-xs">VAT Number: <span class="text-dark ms-sm-2 font-weight-bold">FRB1235476</span></span>
-                  </div>
-                  <div class="ms-auto text-end">
-                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">delete</i>Delete</a>
-                    <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">edit</i>Edit</a>
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex p-4 mb-2 mt-3 bg-gray-100 border-radius-lg">
-                  <div class="d-flex flex-column">
-                    <h6 class="mb-3 text-sm">Ethan James</h6>
-                    <span class="mb-2 text-xs">Company Name: <span class="text-dark font-weight-bold ms-sm-2">Fiber Notion</span></span>
-                    <span class="mb-2 text-xs">Email Address: <span class="text-dark ms-sm-2 font-weight-bold">ethan@fiber.com</span></span>
-                    <span class="text-xs">VAT Number: <span class="text-dark ms-sm-2 font-weight-bold">FRB1235476</span></span>
-                  </div>
-                  <div class="ms-auto text-end">
-                    <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">delete</i>Delete</a>
-                    <a class="btn btn-link text-dark px-3 mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm me-2">edit</i>Edit</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 mt-4">
-          <div class="card h-100 mb-4">
-            <div class="card-header pb-0 px-3">
-              <div class="row">
-                <div class="col-md-6">
-                  <h6 class="mb-0">Transacciones</h6>
-                </div>
-                <div class="col-md-6 d-flex justify-content-start justify-content-md-end align-items-center">
-                  <i class="material-symbols-rounded me-2 text-lg">date_range</i>
-                  <small>23 - 30 Marzo 2025</small>
-                </div>
-              </div>
-            </div>
-            <div class="card-body pt-4 p-3">
-              <h6 class="text-uppercase text-body text-xs font-weight-bolder mb-3">Newest</h6>
-              <ul class="list-group">
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-danger mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">expand_more</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">Netflix</h6>
-                      <span class="text-xs">27 March 2020, at 12:30 PM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-danger text-gradient text-sm font-weight-bold">
-                    - $ 2,500
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">expand_less</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">Apple</h6>
-                      <span class="text-xs">27 March 2020, at 04:30 AM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-success text-gradient text-sm font-weight-bold">
-                    + $ 2,000
-                  </div>
-                </li>
-              </ul>
-              <h6 class="text-uppercase text-body text-xs font-weight-bolder my-3">Yesterday</h6>
-              <ul class="list-group">
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">expand_less</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">Stripe</h6>
-                      <span class="text-xs">26 March 2020, at 13:45 PM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-success text-gradient text-sm font-weight-bold">
-                    + $ 750
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">expand_less</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">HubSpot</h6>
-                      <span class="text-xs">26 March 2020, at 12:30 PM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-success text-gradient text-sm font-weight-bold">
-                    + $ 1,000
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">expand_less</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">Creative Tim</h6>
-                      <span class="text-xs">26 March 2020, at 08:30 AM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-success text-gradient text-sm font-weight-bold">
-                    + $ 2,500
-                  </div>
-                </li>
-                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                  <div class="d-flex align-items-center">
-                    <button class="btn btn-icon-only btn-rounded btn-outline-dark mb-0 me-3 p-3 btn-sm d-flex align-items-center justify-content-center"><i class="material-symbols-rounded text-lg">priority_high</i></button>
-                    <div class="d-flex flex-column">
-                      <h6 class="mb-1 text-dark text-sm">Webflow</h6>
-                      <span class="text-xs">26 March 2020, at 05:00 AM</span>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center text-dark text-sm font-weight-bold">
-                    Pending
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+    </div>
+    
