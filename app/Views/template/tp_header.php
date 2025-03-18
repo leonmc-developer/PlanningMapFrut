@@ -69,15 +69,15 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>pages/virtual-reality.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>inventario">
             <i class="material-symbols-rounded opacity-5">view_in_ar</i>
             <span class="nav-link-text ms-1">Inventarios</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>pages/notifications.html">
+          <a class="nav-link text-dark" href="<?=base_url()?>movimiento">
             <i class="material-symbols-rounded opacity-5">notifications</i>
-            <span class="nav-link-text ms-1">Notifications</span>
+            <span class="nav-link-text ms-1">Ingreso/Egreso</span>
           </a>
         </li>
         <li class="nav-item">

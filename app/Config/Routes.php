@@ -18,6 +18,8 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('/tipo_planta/update/(:num)', 'TipoPlanta::update/$1');
  $routes->get('/tipo_planta/delete/(:num)', 'TipoPlanta::delete/$1');
  $routes->get('/terreno', 'Terreno::index');
+ $routes->get('/lote', 'Lote::index');
+ $routes->get('/inventario', 'Inventario::index');
 
  $routes->get('/terreno/index', 'Examples::terrenos');
  $routes->get('/sector/index', 'Examples::sectores');

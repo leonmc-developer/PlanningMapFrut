@@ -213,7 +213,7 @@
                         Cultivo de manzanas variedades para la localidad de achiras.
                       </p>
                       <div class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
+                        <a type="button" href="<?=base_url()?>lote" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</a>
                         <div class="avatar-group mt-2">
                           <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elena Morison">
                             <img alt="Image placeholder" src="<?=base_url()?>assets/img/team-1.jpg">
@@ -250,8 +250,8 @@
                         Cultivo de mandarina varieda INCOR localidad achiras.
                       </p>
                       <div class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
-                        <div class="avatar-group mt-2">
+                      <a type="button" href="<?=base_url()?>lote" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</a>
+                      <div class="avatar-group mt-2">
                           <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nick Daniel">
                             <img alt="Image placeholder" src="<?=base_url()?>assets/img/team-3.jpg">
                           </a>
@@ -287,8 +287,8 @@
                         Cultivo de durazno variedad turbalina localidad achiras.
                       </p>
                       <div class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
-                        <div class="avatar-group mt-2">
+                      <a type="button" href="<?=base_url()?>lote" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</a>
+                      <div class="avatar-group mt-2">
                           <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
                             <img alt="Image placeholder" src="<?=base_url()?>assets/img/team-4.jpg">
                           </a>
@@ -324,8 +324,8 @@
                         Cultivo frutal de uva de mesa verde y negra localidad achiras.
                       </p>
                       <div class="d-flex align-items-center justify-content-between">
-                        <button type="button" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</button>
-                        <div class="avatar-group mt-2">
+                      <a type="button" href="<?=base_url()?>lote" class="btn btn-outline-primary btn-sm mb-0">Ver Proyecto</a>
+                      <div class="avatar-group mt-2">
                           <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Peterson">
                             <img alt="Image placeholder" src="<?=base_url()?>assets/img/team-4.jpg">
                           </a>
