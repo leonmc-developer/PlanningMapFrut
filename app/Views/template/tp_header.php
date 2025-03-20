@@ -109,13 +109,13 @@
           <ul class="dropdown-menu" style="margin-top:0; padding-top:0;">
             <!-- Submenú de primer nivel -->
             <li>
-              <a class="dropdown-item text-dark" href="<?=base_url()?>terreno/index">
+              <a class="dropdown-item <?=(str_contains(current_url(), "terreno/index"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>terreno/index">
                 <i class="material-symbols-rounded opacity-5">map</i>
                 <span class="nav-link-text ms-1">Terrenos</span>
               </a>
             </li>
             <li>
-              <a class="dropdown-item text-dark" href="<?=base_url()?>tipo_planta/index">
+              <a class="dropdown-item <?=(str_contains(current_url(), "tipo_planta/index"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>tipo_planta/index">
                 <i class="material-symbols-rounded opacity-5">nutrition</i>
                 <span class="nav-link-text ms-1">Tipo Plantas</span>
               </a>

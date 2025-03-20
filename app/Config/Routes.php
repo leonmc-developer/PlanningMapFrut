@@ -20,6 +20,7 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/terreno/index', 'Terreno::index');
  $routes->get('/terreno/lote', 'Lote::index');
  $routes->get('/inventario', 'Inventario::index');
+ $routes->get('/actividades', 'Movimiento::index');
 
  $routes->get('/terreno/index', 'Examples::terrenos');
  $routes->get('/sector/index', 'Examples::sectores');
