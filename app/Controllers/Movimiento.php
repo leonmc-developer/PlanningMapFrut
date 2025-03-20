@@ -7,7 +7,7 @@ class Movimiento extends BaseController
     public function index()
 	{
         $output=array();
-        $this->_viewOutput('ingreso-egreso', (array)$output);
+        $this->_viewOutput('planificacion-actividades', (array)$output);
 	}
     private function _viewOutput($vista=null,$output = null) {
         echo view('template/tp_header',$output);

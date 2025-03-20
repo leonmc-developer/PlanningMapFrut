@@ -5,15 +5,10 @@
       width: 100%;   /* Mapa ocupará todo el ancho de la pantalla */
     }
   </style>
-<div class="container-fluid py-2" >
+<div class="container px-0 py-0" >
       <div class="row">
         <div class="ms-3" style="height: 100vh;">
-          <h3 class="mb-0 h4 font-weight-bolder">MAPA</h3>
-          <p class="mb-4">
-            Check the sales, value and bounce rate by country.
-          </p>
-
-          <div id="map"></div>
+                    <div id="map"></div>
 
   <!-- Cargar la API de Google Maps con tu clave de API -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_sDer-8vN5_TLOEiZpb6yOAhdK3Nwnjw&callback=initMap" async defer></script>
