@@ -54,18 +54,17 @@
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="<?=base_url()?>terreno">
+            <i class="material-symbols-rounded opacity-5">receipt_long</i>
+            <span class="nav-link-text ms-1">Terreno Proyectos</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="<?=base_url()?>maps/index">
             <i class="material-symbols-rounded opacity-5">map_search</i>
-            <span class="nav-link-text ms-1">Mapa Terreno</span>
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="<?=base_url()?>terreno">
-            <i class="material-symbols-rounded opacity-5">receipt_long</i>
-            <span class="nav-link-text ms-1">Proyectos</span>
+            <span class="nav-link-text ms-1">Plano Terreno </span>
           </a>
         </li>
         <li class="nav-item">
