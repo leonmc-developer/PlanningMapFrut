@@ -50,7 +50,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active bg-gradient-dark text-white" href="<?=base_url()?>home/dashboard">
+          <a class="nav-link text-dark" href="<?=base_url()?>home/dashboard">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
@@ -136,6 +136,12 @@
               <a class="dropdown-item text-dark" href="<?=base_url()?>hilera/index">
                 <i class="material-symbols-rounded opacity-5">timeline</i>
                 <span class="nav-link-text ms-1">Hileras</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item text-dark" href="<?=base_url()?>hilera/index">
+                <i class="material-symbols-rounded opacity-5">timeline</i>
+                <span class="nav-link-text ms-1">Tipo Recursos</span>
               </a>
             </li>
           </ul>
