@@ -69,7 +69,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link <?=(str_contains(current_url(), "inventario"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>inventario">
-            <i class="material-symbols-rounded opacity-5">view_in_ar</i>
+            <i class="material-symbols-rounded opacity-5">inventory</i>
             <span class="nav-link-text ms-1">Inventarios</span>
           </a>
         </li>
@@ -81,7 +81,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link <?=(str_contains(current_url(), "movimiento"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>movimiento">
-            <i class="material-symbols-rounded opacity-5">notifications</i>
+            <i class="material-symbols-rounded opacity-5">payments</i>
             <span class="nav-link-text ms-1">Ingresos/Egresos</span>
           </a>
         </li>
