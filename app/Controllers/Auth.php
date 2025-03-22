@@ -1,16 +1,10 @@
 <?php
-namespace IonAuth\Controllers;
+namespace App\Controllers;
 
-/**
- * Class Auth
- *
- * @property Ion_auth|Ion_auth_model $ion_auth      The ION Auth spark
- * @package  CodeIgniter-Ion-Auth
- * @author   Ben Edmunds <ben.edmunds@gmail.com>
- * @author   Benoit VRIGNAUD <benoit.vrignaud@zaclys.net>
- * @license  https://opensource.org/licenses/MIT	MIT License
- */
-class Auth extends \CodeIgniter\Controller
+use App\Models\IonAuthModel;
+use CodeIgniter\Controller;
+
+class Auth extends Controller
 {
 
 	/**
@@ -88,11 +82,11 @@ class Auth extends \CodeIgniter\Controller
 	 * @return string|\CodeIgniter\HTTP\RedirectResponse
 	 */
 	public function index()
-	{  echo "INGRESA";
+	{   
 		if (! $this->ionAuth->loggedIn())
 		{
 			// redirect them to the login page
-			return redirect()->to('/auth/login');
+			return redirect()->to('/auths/login');
 		}
 		else if (! $this->ionAuth->isAdmin()) // remove this elseif if you want to enable this for non-admins
 		{
@@ -141,7 +135,6 @@ class Auth extends \CodeIgniter\Controller
 				//redirect them back to the home page
 				$this->session->setFlashdata('message', $this->ionAuth->messages());
 				return redirect()->to('home/dashboard')->withCookies();
-				echo "  ingrear ";
 			}
 			else
 			{
@@ -170,8 +163,7 @@ class Auth extends \CodeIgniter\Controller
 				'id'   => 'password',
 				'type' => 'password',
 			];
-
-			return $this->renderPage($this->viewsFolder . DIRECTORY_SEPARATOR . 'login', $this->data);
+			return $this->renderPage('auth/login', $this->data);
 		}
 	}
 

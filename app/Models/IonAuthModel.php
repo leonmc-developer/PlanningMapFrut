@@ -1,5 +1,7 @@
 <?php
-namespace IonAuth\Models;
+namespace App\Models;
+
+use CodeIgniter\Model;
 
 /**
  * Name:    Ion Auth Model
@@ -28,7 +30,7 @@ use \CodeIgniter\Database\ConnectionInterface;
  *
  * @property Ion_auth $ion_auth The Ion_auth library
  */
-class IonAuthModel
+class IonAuthModel extends Model
 {
 	/**
 	 * Max cookie lifetime constant

@@ -27,7 +27,7 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/planta/index', 'Examples::plantas');
  $routes->get('/hilera/index', 'Examples::hileras');
 
- $routes->group('auth', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
+ $routes->group('auths', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
 	$routes->add('login', 'Auth::login');
 	$routes->get('logout', 'Auth::logout');
 	$routes->add('forgot_password', 'Auth::forgot_password');
