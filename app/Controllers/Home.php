@@ -4,9 +4,11 @@ namespace App\Controllers;
 use App\Libraries\GroceryCrud;
 class Home extends BaseController
 {
-    public function index(): string
+    public function index()
     {
-        return view('welcome_message');
+        //return view('welcome_message');
+        $output=array();
+        $this->_viewOutput('dashboard', (array)$output);
     }
     public function dashboard()
     {
