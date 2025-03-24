@@ -8,6 +8,9 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use IonAuth\IonAuth;
+use Config\Services;
+
 
 /**
  * Class BaseController
@@ -27,6 +30,8 @@ abstract class BaseController extends Controller
      * @var CLIRequest|IncomingRequest
      */
     protected $request;
+    protected $session; 
+    protected $ionAuth;
 
     /**
      * An array of helpers to be loaded automatically upon
@@ -46,6 +51,12 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+    public function __construct()
+    {
+        // Cargar el servicio de sesión
+        $this->session = Services::session();
+        $this->ionAuth    = new \IonAuth\Libraries\IonAuth();
+    }
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
@@ -54,5 +65,12 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = service('session');
+    }
+    public function _viewOutput($vista=null,$output = null) {
+        $user = $this->ionAuth->user()->row();
+        $output['user']=$user;
+        echo view('template/tp_header',$output);
+        echo view($vista, $output);
+        echo view('template/tp_footer',$output);
     }
 }

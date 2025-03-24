@@ -50,19 +50,19 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link <?=(str_contains(current_url(), "home/dashboard"))?"active bg-gradient-dark text-white":"text-dark"?> " href="<?=base_url()?>home/dashboard">
+          <a class="nav-link <?=(str_contains(current_url(), "dashboard"))?"active bg-gradient-dark text-white":"text-dark"?> " href="<?=base_url()?>dashboard">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link <?=(str_contains(current_url(), "terreno/index"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>terreno/index">
+          <a class="nav-link <?=(str_contains(current_url(), "terreno"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>terreno">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
             <span class="nav-link-text ms-1">Terreno Proyectos</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?=(str_contains(current_url(), "maps/index"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>maps/index">
+          <a class="nav-link <?=(str_contains(current_url(), "maps"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>maps">
             <i class="material-symbols-rounded opacity-5">map_search</i>
             <span class="nav-link-text ms-1">Plano Terreno </span>
           </a>
@@ -80,13 +80,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?=(str_contains(current_url(), "movimiento"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>movimiento">
+          <a class="nav-link <?=(str_contains(current_url(), "movimientos"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>movimientos">
             <i class="material-symbols-rounded opacity-5">payments</i>
             <span class="nav-link-text ms-1">Ingresos/Egresos</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?=(str_contains(current_url(), "home/informacion"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>home/informacion">
+          <a class="nav-link <?=(str_contains(current_url(), "reportes"))?"active bg-gradient-dark text-white":"text-dark"?>" href="<?=base_url()?>reportes">
             <i class="material-symbols-rounded opacity-5">table_view</i>
             <span class="nav-link-text ms-1">Reportes</span>
           </a>
@@ -168,8 +168,8 @@
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="<?=base_url("dashboard")?>"><?=$user->terreno_name?></a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page"><?=ucfirst($section)?></li>
             <!-- <li class="breadcrumb-item text-sm text-dark active" aria-current="page"><?=current_url();?></li> -->
           </ol>
         </nav>

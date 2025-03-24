@@ -12,10 +12,5 @@ class Administracion extends BaseController
 	    $output = $crud->render();
         $this->_viewOutput('administracion', (array)$output);
 	}
-    private function _viewOutput($vista=null,$output = null) {
-        echo view('template/tp_header',$output);
-        echo view($vista, $output);
-        echo view('template/tp_footer',$output);
-    }
-
+   
 }

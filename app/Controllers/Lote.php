@@ -9,10 +9,5 @@ class Lote extends BaseController
         $output=array();
         $this->_viewOutput('details-lote', (array)$output);
 	}
-    private function _viewOutput($vista=null,$output = null) {
-        echo view('template/tp_header',$output);
-        echo view($vista, $output);
-        echo view('template/tp_footer',$output);
-    }
-
+  
 }

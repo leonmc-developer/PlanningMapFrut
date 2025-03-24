@@ -17,10 +17,14 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('/tipo_planta/edit/(:num)', 'TipoPlanta::edit/$1');
  $routes->post('/tipo_planta/update/(:num)', 'TipoPlanta::update/$1');
  $routes->get('/tipo_planta/delete/(:num)', 'TipoPlanta::delete/$1');
- $routes->get('/terreno/index', 'Terreno::index');
+ $routes->get('/terreno', 'Terreno::index');
+ $routes->get('/maps', 'Maps::index');
  $routes->get('/terreno/lote', 'Lote::index');
  $routes->get('/inventario', 'Inventario::index');
- $routes->get('/actividades', 'Movimiento::index');
+ $routes->get('/actividades', 'Actividades::index');
+ $routes->get('/movimientos', 'Movimiento::index');
+ $routes->get('/dashboard', 'Home::dashboard');
+ $routes->get('/reportes', 'Reportes::index');
 
  $routes->get('/terreno/index', 'Examples::terrenos');
  $routes->get('/sector/index', 'Examples::sectores');

@@ -2,17 +2,21 @@
 
 namespace App\Controllers;
 use App\Libraries\GroceryCrud;
+use CodeIgniter\Controller;
 class Home extends BaseController
 {
+   
+   
     public function index()
     {
-        //return view('welcome_message');
-        $output=array();
+      
+        $output=array();        
         $this->_viewOutput('dashboard', (array)$output);
     }
     public function dashboard()
     {
         $output=array();
+        $output['section']="dashboard";
         $this->_viewOutput('dashboard', (array)$output);
     }
     public function informacion()
@@ -37,9 +41,5 @@ class Home extends BaseController
 
 		return $this->_viewOutput("welcome_message",$output);
 	}
-    private function _viewOutput($vista=null,$output = null) {
-        echo view('template/tp_header',$output);
-        echo view($vista, $output);
-        echo view('template/tp_footer',$output);
-    }
+   
 }

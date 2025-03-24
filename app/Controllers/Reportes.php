@@ -2,13 +2,12 @@
 
 use App\Libraries\GroceryCrud;
 use App\Models\TerrenoModel;
-class Inventario extends BaseController
+class Reportes extends BaseController
 {
     public function index()
 	{
         $output=array();
-        $output['section']="inventario";
-        $this->_viewOutput('inventario', (array)$output);
+        $output['section']="reportes";
+        $this->_viewOutput('reportes', (array)$output);
 	}
-
 }
