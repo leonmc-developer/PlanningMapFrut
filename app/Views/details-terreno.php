@@ -12,10 +12,10 @@
           <div class="col-auto my-auto">
             <div class="h-100">
               <h5 class="mb-1">
-              ACHIRAS-CABAÑITA
+              <?=$terreno['nombre']?>
               </h5>
               <p class="mb-0 font-weight-normal text-sm">
-                Cabaña / Huerta
+              <?=$terreno['lema']?>
               </p>
             </div>
           </div>
@@ -116,14 +116,19 @@
                 </div>
                 <div class="card-body p-3">
                   <p class="text-sm">
-                  Somos una familia dedicada a cultivar frutas frescas , ubicada en la localiad de Achiras, Santa Cruz - Bolivia sino también la de nuestra comunidad. Nos apasiona compartir lo que producimos con nuestros amigos y vecinos, y creemos en el valor de la agricultura sustentable para cuidar el medio ambiente y promover una alimentación sana..
+                  <?=$terreno['descripcion']?>
                   </p>
+                  <?php
+                  //var_dump($terreno);s
+                  ?>
                   <hr class="horizontal gray-light my-4">
                   <ul class="list-group">
-                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Localidad:</strong> &nbsp; Achiras - Samaipata</li>
-                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Coordenadas:</strong> &nbsp; <ul><li>(454545.22,4587451.23)</li></ul></li>
-                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Area(m2):</strong> &nbsp; 5123</li>
-                    
+                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Propietario:</strong> &nbsp; <?=$terreno['propietario']?></li>
+                  <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Localidad:</strong> &nbsp; <?=$terreno['ubicacion']?></li>
+                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Ubicación:</strong> &nbsp; <?=$terreno['coordenadas']?></li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Area(m2):</strong> &nbsp; <?=$terreno['superficie']?></li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Altitud(msnm):</strong> &nbsp; <?=$terreno['altitud']?></li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">TipoSuelo:</strong> &nbsp; <?=$terreno['tipo_suelo']?></li>
                   </ul>
                 </div>
               </div>

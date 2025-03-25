@@ -8,6 +8,9 @@ class Terreno extends BaseController
 	{
         $output=array();
         $output['section']="terreno";
+        $terreno=new TerrenoModel();
+        $user = $this->ionAuth->user()->row();
+        $output['terreno']=$terreno->obtenerTerrenoPorId($user->terreno_id);
         $this->_viewOutput('details-terreno', (array)$output);
 	}
 }
